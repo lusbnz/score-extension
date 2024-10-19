@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "EPL Match Results",
+  "version": "1.0",
+  "description": "Hiển thị kết quả trận đấu EPL và bảng xếp hạng.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["popup.js"]
+    }
+  ]
+}
