@@ -15,9 +15,65 @@ h1 {
 .container{
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 #matches, #standings {
     margin: 4px;
 }
+
+.match-item, .standing-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+.team {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+  
+.crest {
+    width: 20px;
+    height: 20px;
+}
+
+.pos{
+    width: 20px;
+    margin-right: 12px;
+}
+
+.status{
+    width: 60px;
+    margin-right: 12px;
+}
+
+.sepa{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.team-info {
+    text-align: center;
+  }
+  
+  .team-info img {
+    margin: 10px 0;
+  }
+  
+  #backToStandings {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #backToStandings:hover {
+    background-color: #0056b3;
+  }
